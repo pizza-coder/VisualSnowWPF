@@ -13,12 +13,15 @@
         WindowState="Maximized"
         >
     <Grid>
-        <Image
+
+        <MediaElement
             Grid.Row="0"
             Grid.Column="0"
-            Source="img/noise.png"
             Stretch="Fill"
-            Opacity="0.2"
-            ></Image>
+            Source="video/noise.wmv"
+            x:Name="VideoElement"
+            MediaEnded="MediaElement_MediaEnded"
+            />
+
     </Grid>
 </Window>
